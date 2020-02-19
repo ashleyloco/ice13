@@ -1,0 +1,11 @@
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/bin/Debug/netcoreapp3.1/ICE12_Locatelli
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/bin/Debug/netcoreapp3.1/ICE12_Locatelli.deps.json
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/bin/Debug/netcoreapp3.1/ICE12_Locatelli.runtimeconfig.json
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/bin/Debug/netcoreapp3.1/ICE12_Locatelli.runtimeconfig.dev.json
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/bin/Debug/netcoreapp3.1/ICE12_Locatelli.dll
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/bin/Debug/netcoreapp3.1/ICE12_Locatelli.pdb
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/obj/Debug/netcoreapp3.1/ICE12_Locatelli.csprojAssemblyReference.cache
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/obj/Debug/netcoreapp3.1/ICE12_Locatelli.AssemblyInfoInputs.cache
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/obj/Debug/netcoreapp3.1/ICE12_Locatelli.AssemblyInfo.cs
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/obj/Debug/netcoreapp3.1/ICE12_Locatelli.dll
+/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/obj/Debug/netcoreapp3.1/ICE12_Locatelli.pdb
