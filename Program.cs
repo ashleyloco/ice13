@@ -60,6 +60,7 @@ namespace ICE12_Locatelli
             double finalTotal = tax + subTotal;
 
             //show receipt output
+            Console.WriteLine("");
             Console.WriteLine("***Lands Beginning***");
             Console.WriteLine(DateTime.Now);
             Console.WriteLine("");
