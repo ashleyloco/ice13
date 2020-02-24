@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/ICE12_Locatelli.csproj": {}
+    "/Users/ashleyloco/Desktop/PF-1/ICE/ICE13_Locatelli/ICE12_Locatelli.csproj": {}
   },
   "projects": {
-    "/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/ICE12_Locatelli.csproj": {
+    "/Users/ashleyloco/Desktop/PF-1/ICE/ICE13_Locatelli/ICE12_Locatelli.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/ICE12_Locatelli.csproj",
+        "projectUniqueName": "/Users/ashleyloco/Desktop/PF-1/ICE/ICE13_Locatelli/ICE12_Locatelli.csproj",
         "projectName": "ICE12_Locatelli",
-        "projectPath": "/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/ICE12_Locatelli.csproj",
+        "projectPath": "/Users/ashleyloco/Desktop/PF-1/ICE/ICE13_Locatelli/ICE12_Locatelli.csproj",
         "packagesPath": "/Users/ashleyloco/.nuget/packages/",
-        "outputPath": "/Users/ashleyloco/Desktop/PF-1/ICE/ICE12_Locatelli/obj/",
+        "outputPath": "/Users/ashleyloco/Desktop/PF-1/ICE/ICE13_Locatelli/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ashleyloco/.nuget/NuGet/NuGet.Config"

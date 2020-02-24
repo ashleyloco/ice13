@@ -14,39 +14,48 @@ namespace ICE12_Locatelli
             const double CARGO_SHORT_PRICE= 57.95;
             const string PRINTED_TSHIRT= "Printed T-Shirt";
             const double PRINTED_TSHIRT_PRICE= 30.75;
-            string[] listItems = new string[4];
-            double[] listPrices = new double[4];
-            listItems[0] = SKI_JACKET;
-            listItems[1] = SKI_PANT;
-            listItems[2] = CARGO_SHORT;
-            listItems[3] = PRINTED_TSHIRT;
-            listPrices[0] = SKI_JACKET_PRICE;
-            listPrices[1] = SKI_PANT_PRICE;
-            listPrices[2] = CARGO_SHORT_PRICE;
-            listPrices[3] = PRINTED_TSHIRT_PRICE;
+
+            string[,] itemsNames = new string[4,1];
+            itemsNames[0,0] = SKI_JACKET;
+            itemsNames[1,0] = SKI_PANT;
+            itemsNames[2,0] = CARGO_SHORT;
+            itemsNames[3,0] = PRINTED_TSHIRT;
+
+            double[,] itemsNprices = new double [4,3];
+            itemsNprices[0,0] = SKI_JACKET_PRICE;
+            itemsNprices[1,0] = SKI_PANT_PRICE;
+            itemsNprices[2,0] = CARGO_SHORT_PRICE;
+            itemsNprices[3,0] = PRINTED_TSHIRT_PRICE;
 
             // in begin for output 
             Console.WriteLine("Land Beginning Order System \n");
             Console.WriteLine("Enter the purchase quantity for each item displayed.\nYour receipt will display the totals for your purchase.\n");
             
-            Console.Write("How many "+ listItems[0]+ " would you like at "+listPrices[0].ToString("c")+" each: ");
-            int answerSkiJacket = int.Parse(Console.ReadLine());
+            Console.Write("How many "+ itemsNames[0,0]+ " would you like at "+itemsNprices[0,0].ToString("c")+" each: ");
+            double answerSkiJacket = double.Parse(Console.ReadLine());
 
-            Console.Write("How many "+listItems[1]+" would you like at "+listPrices[1].ToString("c")+" each: ");
-            int answerSkiPants = int.Parse(Console.ReadLine());
+            Console.Write("How many "+itemsNames[1,0]+" would you like at "+itemsNprices[1,0].ToString("c")+" each: ");
+            double answerSkiPants = double.Parse(Console.ReadLine());
             
-            Console.Write("How many "+listItems[2]+" would you like at "+listPrices[2].ToString("c")+" each: ");
-            int answerCargoShorts = int.Parse(Console.ReadLine());
+            Console.Write("How many "+itemsNames[2,0]+" would you like at "+itemsNprices[2,0].ToString("c")+" each: ");
+            double answerCargoShorts = double.Parse(Console.ReadLine());
 
-            Console.Write("How many "+listItems[3]+" would you like at "+listPrices[3].ToString("c")+" each: ");
-            int answerPrintedTshirt = int.Parse(Console.ReadLine());
+            Console.Write("How many "+itemsNames[3,0]+" would you like at "+itemsNprices[3,0].ToString("c")+" each: ");
+            double answerPrintedTshirt = double.Parse(Console.ReadLine());
+
+             // users answer how much items
+            itemsNprices[0,1] = answerSkiJacket;
+            itemsNprices[1,1] = answerSkiPants;
+            itemsNprices[2,1] = answerCargoShorts;
+            itemsNprices[3,1] = answerPrintedTshirt;
+            // total price Ski Jacket to Printed T Shirted
+            itemsNprices[0,2] = itemsNprices[0,0] * itemsNprices[0,1];
+            itemsNprices[1,2] = itemsNprices[1,0] * itemsNprices[1,1];
+            itemsNprices[2,2] = itemsNprices[2,0] * itemsNprices[2,1];
+            itemsNprices[3,2] = itemsNprices[3,0] * itemsNprices[3,1];
 
             //subotal for each items
-            double totalSkiJacket = answerSkiJacket * listPrices[0];
-            double totalSkiPant = answerSkiPants * listPrices[1];
-            double totalCargoShort = answerCargoShorts * listPrices[2];
-            double totalPrintedTshirt = answerPrintedTshirt * listPrices[3];
-            double subTotal = totalSkiJacket + totalSkiPant + totalCargoShort + totalPrintedTshirt;
+            double subTotal = itemsNprices[0,2] + itemsNprices[1,2] + itemsNprices[2,2] + itemsNprices[3,2];
             double tax = subTotal * .08;
             double finalTotal = tax + subTotal;
 
@@ -55,10 +64,10 @@ namespace ICE12_Locatelli
             Console.WriteLine(DateTime.Now);
             Console.WriteLine("");
             Console.WriteLine("\tITEM\t\tPRICE\t\t TOTAL");
-            Console.WriteLine(answerSkiJacket+"   "+listItems[0]+"\t\tat "+listPrices[0].ToString("c")+"\t "+totalSkiJacket.ToString("c"));
-            Console.WriteLine(answerSkiPants+"   "+listItems[1]+"\t\tat "+listPrices[1].ToString("c")+"\t "+totalSkiPant.ToString("c"));
-            Console.WriteLine(answerCargoShorts+"   "+listItems[2]+"\tat "+listPrices[2].ToString("c")+"\t "+totalCargoShort.ToString("c"));
-            Console.WriteLine(answerPrintedTshirt+"   "+listItems[3]+"\tat "+listPrices[3].ToString("c")+"\t "+totalPrintedTshirt.ToString("c"));
+            Console.WriteLine(itemsNprices[0,1]+"   "+itemsNames[0,0]+"\t\tat "+itemsNprices[0,0].ToString("c")+"\t "+itemsNprices[0,2].ToString("c"));
+            Console.WriteLine(itemsNprices[1,1]+"   "+itemsNames[1,0]+"\t\tat "+itemsNprices[1,0].ToString("c")+"\t "+itemsNprices[1,2].ToString("c"));
+            Console.WriteLine(itemsNprices[2,1]+"   "+itemsNames[2,0]+"\tat "+itemsNprices[2,0].ToString("c")+"\t "+itemsNprices[2,2].ToString("c"));
+            Console.WriteLine(itemsNprices[3,1]+"   "+itemsNames[3,0]+"\tat "+itemsNprices[3,0].ToString("c")+"\t "+itemsNprices[3,2].ToString("c"));
             Console.WriteLine("");
             Console.WriteLine("\t\t\t  Sub Total\t "+subTotal.ToString("c"));
             Console.WriteLine("\t\t\t\tTax\t "+tax.ToString("c"));
